@@ -12,17 +12,17 @@ private_subnets = []
 }
 
 output "vpc_id_1" {
-  value = "${module.vpc.vpc_id}"
+  value = "${module.vpc_1.vpc_id}"
 }
 
 output "vpc_cidr_1" {
-  value = "${module.vpc.vpc_cidr}"
+  value = "${module.vpc_1.vpc_cidr}"
 }
 
 output "public_subnets_1" {
-  value = "${module.vpc.public_subnets}"
+  value = "${module.vpc_1.public_subnets}"
 }
 
 output "private_subnets_1" {
-  value = "${module.vpc.private_subnets}"
+  value = "${module.vpc_1.private_subnets}"
 }

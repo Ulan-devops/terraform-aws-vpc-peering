@@ -1,4 +1,4 @@
-module "vpc-1" {
+module "vpc_1" {
   source = "git::https://github.com/hakten/module-vpc.git"
 
 cidr            = "10.0.0.0/16"
@@ -11,18 +11,18 @@ public_subnets  = ["10.0.1.0/24","10.0.2.0/24","10.0.3.0/24"]
 private_subnets = []
 }
 
-output "vpc_id" {
+output "vpc_id_1" {
   value = "${module.vpc.vpc_id}"
 }
 
-output "vpc_cidr" {
+output "vpc_cidr_1" {
   value = "${module.vpc.vpc_cidr}"
 }
 
-output "public_subnets" {
+output "public_subnets_1" {
   value = "${module.vpc.public_subnets}"
 }
 
-output "private_subnets" {
+output "private_subnets_1" {
   value = "${module.vpc.private_subnets}"
 }

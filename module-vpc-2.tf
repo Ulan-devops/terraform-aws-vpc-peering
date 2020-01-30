@@ -1,6 +1,8 @@
 provider "aws" {
   region = "us-east-2"
 }
+
+
 module "vpc_2" {
   source = "git::https://github.com/hakten/module-vpc.git"
 

@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 
-module "vpc_2" {
+module "vpc" {
   source = "git::https://github.com/hakten/module-vpc.git"
 
 cidr            = "192.168.0.0/16"
@@ -16,18 +16,18 @@ public_subnets  = ["192.168.1.0/24","192.168.2.0/24","192.168.3.0/24"]
 private_subnets = []
 }
 
-output "vpc_id_2" {
-  value = "${module.vpc_2.vpc_id}"
+output "vpc_id" {
+  value = "${module.vpc.vpc_id}"
 }
 
-output "vpc_cidr_2" {
-  value = "${module.vpc_2.vpc_cidr}"
+output "vpc_cidr" {
+  value = "${module.vpc.vpc_cidr}"
 }
 
-output "public_subnets_2" {
-  value = "${module.vpc_2.public_subnets}"
+output "public_subnets" {
+  value = "${module.vpc.public_subnets}"
 }
 
-output "private_subnets_2" {
-  value = "${module.vpc_2.private_subnets}"
+output "private_subnets" {
+  value = "${module.vpc.private_subnets}"
 }

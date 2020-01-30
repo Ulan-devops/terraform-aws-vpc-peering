@@ -9,7 +9,7 @@ resource "aws_vpc_peering_connection" "connect" {
   peer_owner_id = "${data.aws_caller_identity.current.account_id}"
   peer_vpc_id   = "${module.vpc-2.vpc_id}"
   peer_region   = "us-east-2"
-  auto_accept   = true
+#   auto_accept   = true
 }
 
 provider "aws" {

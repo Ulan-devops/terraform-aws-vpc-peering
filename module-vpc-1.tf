@@ -3,7 +3,7 @@ module "vpc-1" {
   
 }
 output "vpc_id_1" {
-  value = "${module.vpc-1.vpc_id}"
+  value = "${module.vpc-1.vpc-id}"
 }
 
 output "vpc_cidr_1" {

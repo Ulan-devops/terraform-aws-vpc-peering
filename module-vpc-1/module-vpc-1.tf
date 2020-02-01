@@ -17,7 +17,7 @@ private_subnets = []
 }
 
 output "vpc-id" {
-  value = "${module.vpc.vpc_id}"
+  value = "${module.vpc.vpc-id}"
 }
 
 output "vpc_cidr" {

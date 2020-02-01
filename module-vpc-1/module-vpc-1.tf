@@ -16,7 +16,7 @@ public_subnets  = ["10.0.1.0/24","10.0.2.0/24","10.0.3.0/24"]
 private_subnets = []
 }
 
-output "vpc_id" {
+output "vpc-id" {
   value = "${module.vpc.vpc_id}"
 }
 

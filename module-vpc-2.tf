@@ -1,4 +1,4 @@
-module "vpc" {
+module "vpc-2" {
   source = "git::https://github.com/hakten/module-vpc.git"
   provider "aws" {
   region = "us-east-2"

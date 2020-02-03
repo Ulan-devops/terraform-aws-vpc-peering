@@ -1,11 +1,10 @@
-
+provider "aws" {
+  region = "us-east-1"
+}
 
 
 module "vpc-1" {
   source = "git::https://github.com/hakten/module-vpc.git"
-  provider "aws" {
-  region = "us-east-1"
-}
 
 cidr            = "10.0.0.0/16"
 

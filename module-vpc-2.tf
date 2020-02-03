@@ -1,9 +1,11 @@
-module "vpc-2" {
-  source = "git::https://github.com/hakten/module-vpc.git"
-  provider "aws" {
+provider "aws" {
+  alias = "peer"
   region = "us-east-2"
 }
 
+module "vpc-2" {
+  source = "git::https://github.com/hakten/module-vpc.git"
+  provider = "aws.peer"
 cidr            = "192.168.0.0/16"
 
 project         = "Wordpress"

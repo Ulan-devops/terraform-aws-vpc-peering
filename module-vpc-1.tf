@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 
-module "vpc-1" {
-  source = "git::https://github.com/hakten/module-vpc.git"
+module "vpc_1" {
+  source = "git::https://github.com/hakten/module_vpc.git"
 
 cidr            = "10.0.0.0/16"
 
@@ -12,22 +12,22 @@ project         = "Wordpress"
 environment     = "Test"
 
 azs             = ["us-east-1a","us-east-1b","us-east-1c"]
-public-subnets  = ["10.0.1.0/24","10.0.2.0/24","10.0.3.0/24"]
-private-subnets = []
+public_subnets  = ["10.0.1.0/24","10.0.2.0/24","10.0.3.0/24"]
+private_subnets = []
 }
 
-output "vpc-id-1" {
-  value = "${module.vpc-1.vpc-id}"
+output "vpc_id_1" {
+  value = "${module.vpc_1.vpc_id}"
 }
 
-output "vpc-cidr-1" {
-  value = "${module.vpc-1.vpc-cidr}"
+output "vpc_cidr_1" {
+  value = "${module.vpc_1.vpc_cidr}"
 }
 
-output "public-subnets-1" {
-  value = "${module.vpc-1.public-subnets}"
+output "public_subnets_1" {
+  value = "${module.vpc_1.public_subnets}"
 }
 
-output "private-subnets-1" {
-  value = "${module.vpc-1.private-subnets}"
+output "private_subnets_1" {
+  value = "${module.vpc_1.private_subnets}"
 }

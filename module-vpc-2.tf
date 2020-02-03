@@ -12,8 +12,8 @@ project         = "Wordpress"
 environment     = "Test"
 
 azs             = ["us-east-2a","us-east-2b","us-east-2c"]
-public_subnets  = ["192.168.1.0/24","192.168.2.0/24","192.168.3.0/24"]
-private_subnets = []
+public-subnets  = ["192.168.1.0/24","192.168.2.0/24","192.168.3.0/24"]
+private-subnets = []
 }
 
 output "vpc-id-2" {

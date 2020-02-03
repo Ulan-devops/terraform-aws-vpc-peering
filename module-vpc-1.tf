@@ -4,7 +4,7 @@ provider "aws" {
 
 
 module "vpc_1" {
-  source = "git::https://github.com/hakten/module_vpc.git"
+  source = "git::https://github.com/hakten/module-vpc.git"
 
 cidr            = "10.0.0.0/16"
 

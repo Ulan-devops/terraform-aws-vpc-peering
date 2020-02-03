@@ -5,7 +5,9 @@ provider "aws" {
 
 module "vpc-2" {
   source = "git::https://github.com/hakten/module-vpc.git"
-  provider = "aws.peer"
+  providers = {
+    aws = "aws.peer"
+  }  
 cidr            = "192.168.0.0/16"
 
 project         = "Wordpress"
